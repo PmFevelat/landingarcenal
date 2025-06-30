@@ -11,10 +11,10 @@ export default function HeroSection() {
                         <div className="relative z-10 mx-auto max-w-5xl px-6 -mt-48">
                             <div className="relative text-center">
                                 <h1 className="mx-auto max-w-2xl text-balance text-4xl md:text-5xl text-white font-extralight" style={{ fontFamily: 'var(--font-inter-display)' }}>
-                                    Débloquez l'<span className="font-normal">intelligence</span> de votre entreprise, avec des solutions <span className="font-normal">sur mesure</span>
+                                    Débloquez l&apos;<span className="font-normal">intelligence</span> de votre entreprise, avec des solutions <span className="font-normal">sur mesure</span>
                                 </h1>
 
-                                <p className="text-gray-200 mx-auto my-6 max-w-2xl text-balance text-xl font-extralight" style={{ fontFamily: 'var(--font-inter-display)' }}>Arcenal vous accompagne dans une adoption structurée, progressive et stratégique de l'IA, au service de votre performance.</p>
+                                <p className="text-gray-200 mx-auto my-6 max-w-2xl text-balance text-xl font-extralight" style={{ fontFamily: 'var(--font-inter-display)' }}>Arcenal vous accompagne dans une adoption structurée, progressive et stratégique de l&apos;IA, au service de votre performance.</p>
 
                                 <div className="flex flex-col items-center justify-center gap-3">
                                     <RainbowButton

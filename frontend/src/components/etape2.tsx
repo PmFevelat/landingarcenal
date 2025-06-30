@@ -68,7 +68,7 @@ export default function Etape2() {
                                                 </span>
                                                 <h3 className="text-white text-lg font-medium" style={{ fontFamily: 'var(--font-inter-display)' }}>Performance</h3>
                                             </div>
-                                            <p className="text-gray-300 text-lg whitespace-nowrap">Vitesse d'exécution</p>
+                                            <p className="text-gray-300 text-lg whitespace-nowrap">Vitesse d&apos;exécution</p>
                                         </FeatureCard>
                                     </div>
                                 </div>

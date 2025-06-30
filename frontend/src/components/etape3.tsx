@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from '@/components/ui/button'
-import { ChevronRight, Target, Code, Sparkles, Brain, Cpu, Database, Zap, Users, Globe } from 'lucide-react'
+import { ChevronRight, Target, Code, Brain, Cpu, Database, Users } from 'lucide-react'
 import Link from 'next/link'
 import React, { forwardRef, useRef } from "react";
 import { cn } from "@/lib/utils";

@@ -1,6 +1,5 @@
 import Link from 'next/link'
-import { cn } from '@/lib/utils'
-import { ReactNode } from 'react'
+
 
 // Composant CardDecorator pour les angles orangés
 const CardDecorator = () => (
@@ -43,7 +42,7 @@ export default function TeamSection() {
                             className="text-white text-3xl font-extralight sm:text-4xl"
                             style={{ fontFamily: 'var(--font-inter-display)' }}
                         >
-                            L'équipe
+                            L&apos;équipe
                         </h2>
                     </div>
                 </div>
@@ -53,6 +52,7 @@ export default function TeamSection() {
                         {members.map((member, index) => (
                             <div key={index} className="group relative overflow-hidden flex flex-col bg-black/50 border border-white/10 backdrop-blur-sm rounded-none shadow-none p-6">
                                 <CardDecorator />
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img 
                                     className="h-72 w-full rounded-lg object-cover object-top grayscale transition-all duration-500 hover:grayscale-0 group-hover:h-64 group-hover:rounded-xl" 
                                     src={member.avatar} 

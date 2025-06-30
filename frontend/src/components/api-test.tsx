@@ -21,7 +21,7 @@ interface ContactFormData {
 export function ApiTest() {
   const [connectionStatus, setConnectionStatus] = useState<'idle' | 'testing' | 'success' | 'error'>('idle')
   const [apiResponse, setApiResponse] = useState<ApiResponse | null>(null)
-  const [blogPosts, setBlogPosts] = useState<any[]>([])
+  const [blogPosts, setBlogPosts] = useState<Array<{id: number, title: string, excerpt: string, author: string, date: string}>>([])
   const [isLoading, setIsLoading] = useState(false)
 
   // Test de connexion avec le backend
