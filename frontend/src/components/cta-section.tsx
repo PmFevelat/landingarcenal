@@ -11,7 +11,7 @@ export default function CtaSection() {
                             className="text-white text-balance text-3xl font-extralight lg:text-4xl"
                             style={{ fontFamily: 'var(--font-inter-display)' }}
                         >
-                            Ready to transform your development workflow?
+                            Et vous, quel futur allez-vous vous offrir ?
                         </h2>
                         <div className="flex justify-center">
                             <Button

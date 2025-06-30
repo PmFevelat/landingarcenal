@@ -3,7 +3,7 @@ import { Quote } from 'lucide-react'
 export default function Manifesto() {
     return (
         <section className="relative min-h-screen">
-            <div className="relative z-10 py-24">
+            <div className="relative z-10 py-16 md:py-24">
                 <div className="mx-auto w-full max-w-5xl px-6">
                     <div>
                         <h2 className="text-white max-w-2xl text-balance text-4xl font-extralight" style={{ fontFamily: 'var(--font-inter-display)' }}>Manifesto</h2>

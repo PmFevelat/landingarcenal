@@ -6,7 +6,7 @@ import { OrbitingCircles } from '@/components/magicui/orbiting-circles'
 export default function Etape1() {
     return (
         <section className="relative">
-            <div className="relative z-10 py-16 md:py-24">
+            <div className="relative z-10 py-8 md:py-16">
                 <div className="mx-auto max-w-5xl px-6">
                     <div className="grid gap-8 md:grid-cols-2 md:gap-16 items-center">
                         <div className="space-y-6">
@@ -26,7 +26,7 @@ export default function Etape1() {
                                 asChild
                                 variant="outline"
                                 size="sm"
-                                className="gap-1 pr-1.5 border-white/20 text-white hover:bg-white/10 hover:text-white font-normal"
+                                className="gap-1 pr-1.5 border-white/20 bg-white/10 text-white hover:bg-white/20 hover:text-white font-normal"
                                 style={{ fontFamily: 'var(--font-inter-display)' }}>
                                 <Link href="#">
                                     <span>En savoir plus</span>
@@ -69,17 +69,7 @@ export default function Etape1() {
                                     </OrbitingCircles>
                                 </div>
                                 
-                                {/* Centre avec logo Arcenal */}
-                                <div className="absolute inset-0 flex items-center justify-center">
-                                    <div className="bg-black/80 backdrop-blur-sm border border-white/20 rounded-full size-20 flex items-center justify-center">
-                                        <span 
-                                            className="text-white text-2xl font-bold"
-                                            style={{ fontFamily: 'var(--font-inter-display)' }}
-                                        >
-                                            A
-                                        </span>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>

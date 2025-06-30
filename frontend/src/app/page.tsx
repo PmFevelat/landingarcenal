@@ -40,8 +40,8 @@ export default function Home() {
         <Etape2 />
         <Etape3 />
         <FeaturesSection />
-        <Manifesto />
         <TeamSection />
+        <Manifesto />
         <CtaSection />
         <FooterSection />
       </div>

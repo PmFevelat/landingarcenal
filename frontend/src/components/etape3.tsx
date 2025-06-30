@@ -170,7 +170,7 @@ export default function Etape3() {
                                 asChild
                                 variant="outline"
                                 size="sm"
-                                className="gap-1 pr-1.5 border-white/20 text-white hover:bg-white/10 hover:text-white font-normal"
+                                className="gap-1 pr-1.5 border-white/20 bg-white/10 text-white hover:bg-white/20 hover:text-white font-normal"
                                 style={{ fontFamily: 'var(--font-inter-display)' }}>
                                 <Link href="#">
                                     <span>Voir les intégrations</span>

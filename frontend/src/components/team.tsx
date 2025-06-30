@@ -1,4 +1,16 @@
 import Link from 'next/link'
+import { cn } from '@/lib/utils'
+import { ReactNode } from 'react'
+
+// Composant CardDecorator pour les angles orangés
+const CardDecorator = () => (
+    <>
+        <span className="absolute -left-px -top-px block size-2 border-l-2 border-t-2 border-orange-400"></span>
+        <span className="absolute -right-px -top-px block size-2 border-r-2 border-t-2 border-orange-400"></span>
+        <span className="absolute -bottom-px -left-px block size-2 border-b-2 border-l-2 border-orange-400"></span>
+        <span className="absolute -bottom-px -right-px block size-2 border-b-2 border-r-2 border-orange-400"></span>
+    </>
+)
 
 const members = [
     {
@@ -24,32 +36,23 @@ const members = [
 export default function TeamSection() {
     return (
         <section className="relative">
-            <div className="relative z-10 py-8 md:py-12">
+            <div className="relative z-10 py-16 md:py-24">
                 <div className="mx-auto w-full max-w-5xl px-6">
-                    <div className="mt-12 gap-4 sm:grid sm:grid-cols-2 md:mt-24">
-                        <div className="sm:w-2/5">
-                            <h2 
-                                className="text-white text-3xl font-extralight sm:text-4xl"
-                                style={{ fontFamily: 'var(--font-inter-display)' }}
-                            >
-                                Our dream team
-                            </h2>
-                        </div>
-                        <div className="mt-6 sm:mt-0">
-                            <p 
-                                className="text-gray-300 font-extralight leading-relaxed"
-                                style={{ fontFamily: 'var(--font-inter-display)' }}
-                            >
-                                During the working process, we perform regular fitting with the client because he is the only person who can feel whether a new suit fits or not.
-                            </p>
-                        </div>
+                    <div className="mt-12 md:mt-24">
+                        <h2 
+                            className="text-white text-3xl font-extralight sm:text-4xl"
+                            style={{ fontFamily: 'var(--font-inter-display)' }}
+                        >
+                            L'équipe
+                        </h2>
                     </div>
                 </div>
                 <div className="mt-16">
                     <div className="mx-auto max-w-4xl px-6">
                         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
                         {members.map((member, index) => (
-                            <div key={index} className="group overflow-hidden flex flex-col bg-black/50 border border-white/10 backdrop-blur-sm rounded-xl p-6">
+                            <div key={index} className="group relative overflow-hidden flex flex-col bg-black/50 border border-white/10 backdrop-blur-sm rounded-none shadow-none p-6">
+                                <CardDecorator />
                                 <img 
                                     className="h-72 w-full rounded-lg object-cover object-top grayscale transition-all duration-500 hover:grayscale-0 group-hover:h-64 group-hover:rounded-xl" 
                                     src={member.avatar} 
