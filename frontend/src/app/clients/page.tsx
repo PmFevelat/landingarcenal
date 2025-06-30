@@ -1,5 +1,6 @@
 import { HeroHeader } from '@/components/header'
 import FooterSection from '@/components/footer'
+import Image from 'next/image'
 
 const clientCases = [
     {
@@ -7,42 +8,48 @@ const clientCases = [
         title: "Transformation digitale chez TechCorp",
         date: "Décembre 2024",
         category: "Fintech",
-        description: "Automatisation complète du pipeline de développement"
+        description: "Automatisation complète du pipeline de développement",
+        image: "/vignetteclient.png"
     },
     {
         id: 2,
         title: "Innovation IA pour StartupLabs", 
         date: "Novembre 2024",
         category: "Healthcare",
-        description: "Optimisation des diagnostics médicaux par intelligence artificielle"
+        description: "Optimisation des diagnostics médicaux par intelligence artificielle",
+        image: "/vignetteclient.png"
     },
     {
         id: 3,
         title: "Migration cloud pour Enterprise Solutions",
         date: "Octobre 2024", 
         category: "E-commerce",
-        description: "Modernisation de l'infrastructure et amélioration des performances"
+        description: "Modernisation de l'infrastructure et amélioration des performances",
+        image: "/vignetteclient.png"
     },
     {
         id: 4,
         title: "Plateforme DevOps pour MediaGroup",
         date: "Septembre 2024",
         category: "Media & Entertainment", 
-        description: "Déploiement continu et gestion automatisée des environnements"
+        description: "Déploiement continu et gestion automatisée des environnements",
+        image: "/vignetteclient.png"
     },
     {
         id: 5,
         title: "Solution MLOps pour DataTech",
         date: "Août 2024",
         category: "Data Analytics",
-        description: "Pipeline de machine learning en production avec monitoring avancé"
+        description: "Pipeline de machine learning en production avec monitoring avancé",
+        image: "/vignetteclient.png"
     },
     {
         id: 6,
         title: "Intégration API pour RetailChain",
         date: "Juillet 2024",
         category: "Retail",
-        description: "Architecture microservices et optimisation des performances"
+        description: "Architecture microservices et optimisation des performances",
+        image: "/vignetteclient.png"
     }
 ]
 
@@ -91,25 +98,15 @@ export default function ClientsPage() {
                                 className="border-b border-white/10 py-8 group cursor-pointer hover:bg-white/5 transition-colors duration-300"
                             >
                                 <div className="flex gap-8 items-center">
-                                    {/* Vignette avec effet grainy */}
+                                    {/* Vignette avec image */}
                                     <div className="flex-shrink-0">
-                                        <div className="relative w-32 h-24 rounded-lg overflow-hidden bg-gradient-to-br from-orange-600 to-orange-800">
-                                            {/* Logo Arcenal sur la vignette */}
-                                            <div className="absolute inset-0 flex items-center justify-center">
-                                                <span 
-                                                    className="text-white text-lg font-bold"
-                                                    style={{ fontFamily: 'var(--font-inter-display)' }}
-                                                >
-                                                    A
-                                                </span>
-                                            </div>
-                                            {/* Texture granuleuse sur la vignette */}
-                                            <div 
-                                                className="absolute inset-0 opacity-60 mix-blend-overlay"
-                                                style={{
-                                                    backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.8'/%3E%3C/svg%3E")`,
-                                                    backgroundSize: '80px 80px'
-                                                }}
+                                        <div className="relative w-32 h-24 rounded-lg overflow-hidden">
+                                            <Image
+                                                src={clientCase.image}
+                                                alt={`Vignette pour ${clientCase.title}`}
+                                                fill
+                                                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                                                sizes="(max-width: 768px) 128px, 128px"
                                             />
                                         </div>
                                     </div>
