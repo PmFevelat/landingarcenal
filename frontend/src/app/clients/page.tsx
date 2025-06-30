@@ -6,50 +6,27 @@ const clientCases = [
     {
         id: 1,
         title: "Transformation digitale chez TechCorp",
-        date: "Décembre 2024",
-        category: "Fintech",
+        date: "Mai 2025",
+        category: "Consulting",
         description: "Automatisation complète du pipeline de développement",
         image: "/vignetteclient.png"
     },
     {
         id: 2,
-        title: "Innovation IA pour StartupLabs", 
-        date: "Novembre 2024",
-        category: "Healthcare",
+        title: "Bientôt disponible", 
+        date: "Juin 2025",
+        category: "Performances commerciales",
         description: "Optimisation des diagnostics médicaux par intelligence artificielle",
         image: "/vignetteclient.png"
     },
     {
         id: 3,
-        title: "Migration cloud pour Enterprise Solutions",
-        date: "Octobre 2024", 
-        category: "E-commerce",
-        description: "Modernisation de l'infrastructure et amélioration des performances",
-        image: "/vignetteclient.png"
-    },
-    {
-        id: 4,
-        title: "Plateforme DevOps pour MediaGroup",
-        date: "Septembre 2024",
-        category: "Media & Entertainment", 
-        description: "Déploiement continu et gestion automatisée des environnements",
-        image: "/vignetteclient.png"
-    },
-    {
-        id: 5,
-        title: "Solution MLOps pour DataTech",
-        date: "Août 2024",
-        category: "Data Analytics",
-        description: "Pipeline de machine learning en production avec monitoring avancé",
-        image: "/vignetteclient.png"
-    },
-    {
-        id: 6,
-        title: "Intégration API pour RetailChain",
-        date: "Juillet 2024",
-        category: "Retail",
-        description: "Architecture microservices et optimisation des performances",
-        image: "/vignetteclient.png"
+        title: "Ce pourrait être vous",
+        date: "Prochainement", 
+        category: "Votre projet",
+        description: "Rejoignez nos clients satisfaits et transformez votre business avec nos solutions sur mesure",
+        image: "/vignetteclient.png",
+        isCTA: true
     }
 ]
 
@@ -95,7 +72,9 @@ export default function ClientsPage() {
                         {clientCases.map((clientCase) => (
                             <article 
                                 key={clientCase.id}
-                                className="border-b border-white/10 py-8 group cursor-pointer hover:bg-white/5 transition-colors duration-300"
+                                className={`border-b border-white/10 py-8 group cursor-pointer hover:bg-white/5 transition-colors duration-300 ${
+                                    clientCase.isCTA ? 'hover:bg-orange-500/10' : ''
+                                }`}
                             >
                                 <div className="flex gap-8 items-center">
                                     {/* Vignette avec image */}
@@ -115,7 +94,9 @@ export default function ClientsPage() {
                                     <div className="flex-1 min-w-0">
                                         <div className="flex items-center gap-4 mb-2">
                                             <span 
-                                                className="text-orange-400 text-sm font-normal uppercase tracking-wider"
+                                                className={`text-sm font-normal uppercase tracking-wider ${
+                                                    clientCase.isCTA ? 'text-orange-300' : 'text-orange-400'
+                                                }`}
                                                 style={{ fontFamily: 'var(--font-inter-display)' }}
                                             >
                                                 {clientCase.category}
@@ -128,7 +109,11 @@ export default function ClientsPage() {
                                             </span>
                                         </div>
                                         <h2 
-                                            className="text-white text-2xl font-extralight group-hover:text-orange-400 transition-colors duration-300 mb-2"
+                                            className={`text-2xl font-extralight transition-colors duration-300 mb-2 ${
+                                                clientCase.isCTA 
+                                                    ? 'text-orange-300 group-hover:text-orange-200' 
+                                                    : 'text-white group-hover:text-orange-400'
+                                            }`}
                                             style={{ fontFamily: 'var(--font-inter-display)' }}
                                         >
                                             {clientCase.title}
@@ -144,7 +129,11 @@ export default function ClientsPage() {
                                     {/* Flèche indicative */}
                                     <div className="flex-shrink-0">
                                         <svg 
-                                            className="w-6 h-6 text-gray-600 group-hover:text-orange-400 transition-colors duration-300"
+                                            className={`w-6 h-6 transition-colors duration-300 ${
+                                                clientCase.isCTA 
+                                                    ? 'text-orange-400 group-hover:text-orange-300' 
+                                                    : 'text-gray-600 group-hover:text-orange-400'
+                                            }`}
                                             fill="none" 
                                             stroke="currentColor" 
                                             viewBox="0 0 24 24"

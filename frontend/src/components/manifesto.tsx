@@ -1,4 +1,3 @@
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Quote } from 'lucide-react'
 
 export default function Manifesto() {
@@ -11,7 +10,7 @@ export default function Manifesto() {
                     </div>
                     <div className="mt-16 flex justify-center">
                         <div className="w-full max-w-2xl text-center">
-                            <div className="max-w-xl">
+                            <div className="mx-auto max-w-xl">
                                 <Quote className="fill-orange-400 stroke-orange-400 mx-auto size-8 drop-shadow-lg" />
                                 <blockquote className="mt-6">
                                     <p 
@@ -20,26 +19,13 @@ export default function Manifesto() {
                                     >
                                         Using Tailark has been like unlocking a secret design superpower. It&apos;s the perfect fusion of simplicity and versatility, enabling us to create UIs that are as stunning as they are user-friendly.
                                     </p>
-                                    <footer className="mt-6 flex flex-col items-center justify-center">
-                                        <Avatar className="ring-white/20 size-12 border border-white/10 shadow-lg ring-1">
-                                            <AvatarImage
-                                                src="https://avatars.githubusercontent.com/u/68236786?v=4"
-                                                alt="Théo Balick"
-                                            />
-                                            <AvatarFallback className="bg-orange-600 text-white">T</AvatarFallback>
-                                        </Avatar>
+                                    <footer className="mt-6 flex justify-center">
                                         <cite 
-                                            className="text-white mt-2 text-lg font-normal"
+                                            className="text-white text-lg font-normal"
                                             style={{ fontFamily: 'var(--font-inter-display)' }}
                                         >
-                                            Théo Balick
+                                            L&apos;équipe Arcenal
                                         </cite>
-                                        <span 
-                                            className="text-gray-400 font-extralight"
-                                            style={{ fontFamily: 'var(--font-inter-display)' }}
-                                        >
-                                            @theo_b
-                                        </span>
                                     </footer>
                                 </blockquote>
                             </div>

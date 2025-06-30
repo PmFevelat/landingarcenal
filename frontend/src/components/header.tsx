@@ -6,7 +6,6 @@ import React from 'react'
 
 const menuItems = [
     { name: 'Clients', href: '/clients' },
-    { name: 'À propos', href: '/contact' },
     { name: 'Blog', href: '/blog' },
 ]
 

@@ -45,11 +45,11 @@ export default function FooterSection() {
                                     Blog
                                 </Link>
                                 <Link 
-                                    href="/contact"
+                                    href="/clients"
                                     className="block text-gray-500 hover:text-white transition-colors duration-200 font-extralight"
                                     style={{ fontFamily: 'var(--font-inter-display)' }}
                                 >
-                                    À propos
+                                    Clients
                                 </Link>
                             </nav>
                         </div>

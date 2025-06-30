@@ -5,37 +5,14 @@ import Image from 'next/image'
 const blogPosts = [
     {
         id: 1,
-        title: "Governance Update",
-        date: "15 Novembre 2024",
-        category: "Gouvernance",
+        title: "Les transcripts de réunion au service de la connaissance clients",
+        category: "Bientôt disponible",
         image: "/vignetteblog.png"
     },
     {
         id: 2,
-        title: "A Research Update", 
-        date: "12 Novembre 2024",
-        category: "Recherche",
-        image: "/vignetteblog.png"
-    },
-    {
-        id: 3,
-        title: "Introducing Arcenal",
-        date: "08 Novembre 2024", 
-        category: "Produit",
-        image: "/vignetteblog.png"
-    },
-    {
-        id: 4,
-        title: "Future of AI Development",
-        date: "05 Novembre 2024",
-        category: "Intelligence Artificielle", 
-        image: "/vignetteblog.png"
-    },
-    {
-        id: 5,
-        title: "Platform Security Updates",
-        date: "02 Novembre 2024",
-        category: "Sécurité",
+        title: "Comprendre et implémenter le RAG dans votre organisation", 
+        category: "Bientôt disponible",
         image: "/vignetteblog.png"
     }
 ]
@@ -100,18 +77,12 @@ export default function BlogPage() {
 
                                     {/* Contenu de l'article */}
                                     <div className="flex-1 min-w-0">
-                                        <div className="flex items-center gap-4 mb-2">
+                                        <div className="mb-2">
                                             <span 
                                                 className="text-orange-400 text-sm font-normal uppercase tracking-wider"
                                                 style={{ fontFamily: 'var(--font-inter-display)' }}
                                             >
                                                 {post.category}
-                                            </span>
-                                            <span 
-                                                className="text-gray-500 text-sm font-extralight"
-                                                style={{ fontFamily: 'var(--font-inter-display)' }}
-                                            >
-                                                {post.date}
                                             </span>
                                         </div>
                                         <h2 

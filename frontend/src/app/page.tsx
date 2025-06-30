@@ -1,6 +1,7 @@
 import HeroSection from "@/components/hero-section-four";
-import Step1 from "@/components/step1";
-import Steps from "@/components/steps";
+import Etape1 from "@/components/etape1"; 
+import Etape2 from "@/components/etape2";
+import Etape3 from "@/components/etape3";
 import FeaturesSection from "@/components/features-six";
 import Manifesto from "@/components/manifesto";
 import TeamSection from "@/components/team";
@@ -35,8 +36,9 @@ export default function Home() {
       {/* Contenu avec z-index pour être au-dessus du background */}
       <div className="relative z-10">
         <HeroSection />
-        <Step1 />
-        <Steps />
+        <Etape1 />  
+        <Etape2 />
+        <Etape3 />
         <FeaturesSection />
         <Manifesto />
         <TeamSection />
